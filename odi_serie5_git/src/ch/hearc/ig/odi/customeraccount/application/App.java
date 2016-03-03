@@ -22,9 +22,13 @@ public class App {
 
         //Création des comptes du client
         System.out.println("Création des comptes du client");
-        client.addAccount("1", "Compte courant", 0.5);
-        client.addAccount("2", "Compte epargne", 1.5);
-        client.addAccount("3", "Compte prevoyance", 2);
+        Account account1 = new Account("1", "Compte courant", 0.5, client);
+        Account account2 = new Account("2", "Compte epargne", 1.5, client);
+        Account account3 = new Account("3", "Compte prevoyance", 2.5, client);
+        
+        client.addAccount(account1);
+        client.addAccount(account2);
+        client.addAccount(account3);
 
         //Créditer les comptes du client
         System.out.println("Créditer les comptes du client");

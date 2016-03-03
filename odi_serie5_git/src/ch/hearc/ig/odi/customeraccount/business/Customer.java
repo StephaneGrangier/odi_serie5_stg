@@ -37,9 +37,9 @@ public class Customer {
 	 * @param name
 	 * @param rate
 	 */
-	public void addAccount(String number, String name, double rate) {
-	    Account account = new Account(number, name, rate,this);
-            accounts.put(number, account);
+	public void addAccount(Account account) {
+	
+            accounts.put(account.getNumber(), account);
             
 	}
 

@@ -23,6 +23,30 @@ public class Account {
         
     }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getRate() {
+        return rate;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
     /**
      *
      * @param amount
@@ -49,7 +73,7 @@ public class Account {
      * @param source
      * @param target
      */
-    public void transfer(double amount, Account source, Account target) {
+    public static void transfer(double amount, Account source, Account target) {
         source.debit(amount);
         target.credit(amount);
     }
