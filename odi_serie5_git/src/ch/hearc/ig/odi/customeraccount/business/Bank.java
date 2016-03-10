@@ -52,7 +52,7 @@ public class Bank {
     }
 
     public void addCustomer(Integer number, String fn, String ln) {
-        Customer customer = new Customer(number, fn, ln);
+        Customer customer = new Customer(number);
         customers.put(number, customer);
     }
 

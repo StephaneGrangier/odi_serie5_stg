@@ -15,11 +15,15 @@ public class Individual extends Customer{
     
     private Date birthDate;
     private String email;
+    private String firstName;
+    private String lastName;
     
     public Individual(Integer number, String firstname, String lastName, Date birthDate, String email){
-        super(number, firstname, lastName);
+        super(number);
         this.birthDate = birthDate;
-        this.email = email;   
+        this.email = email; 
+        this.firstName = firstname;
+        this.lastName = lastName;
     }
 
     public Date getBirthDate() {
