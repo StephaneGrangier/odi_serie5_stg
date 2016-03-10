@@ -6,8 +6,6 @@ public class Customer {
 
 	private Map<String, Account> accounts;  //--converti en Map, VP=> Collection<Account> accounts;
 	private int number;
-	private String firstName;
-	private String lastName;
 
 	/**
 	 * 
@@ -15,10 +13,8 @@ public class Customer {
 	 * @param firstName
 	 * @param lastName
 	 */
-	public Customer(Integer number, String firstName, String lastName) {
+	public Customer(Integer number) {
             this.number = number;
-            this.firstName = firstName;
-            this.lastName = lastName;
             this.accounts = new HashMap();
 	}
 
