@@ -10,8 +10,6 @@ public class Customer {
 	/**
 	 * 
 	 * @param number
-	 * @param firstName
-	 * @param lastName
 	 */
 	public Customer(Integer number) {
             this.number = number;
